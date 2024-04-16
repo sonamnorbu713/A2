@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #027d23, #40ec51);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: green ;
+            text-transform: uppercase;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: goldenrod;
+        }
+
+        button {
+            padding: 12px 24px;
+            background-color: greenyellow;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+
+        .info {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .info p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .info a {
+            color: green;
+            text-decoration: none;
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #027d23, #40ec51);
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Sonam's Website</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="index.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <h1>Registration Form</h1>
+    <form action="register.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<div class="info">
+    <section id="about">
+        <div class="container">
+            <h2>About Our Website</h2>
+            <p>Welcome to our website! We are dedicated to providing a seamless experience for users to explore, engage, and connect. Our platform offers a variety of features, including user-friendly interfaces, secure authentication systems, and interactive content. Whether you're here to discover new information, connect with others, or simply enjoy browsing, we strive to make your experience enjoyable and fulfilling.</p>
+            <p>At our core, we value innovation, creativity, and community. We continuously work to enhance our platform, incorporating feedback and ideas from our users to create an environment that fosters growth and collaboration. Our team is passionate about technology and its potential to empower individuals and communities, and we are committed to delivering excellence in everything we do.</p>
+            <p>Thank you for visiting our website. We hope you find what you're looking for and enjoy your time here. If you have any questions, suggestions, or feedback, please don't hesitate to reach out. We're here to serve you!</p>
+        </div>
+    </section>
+    href="#">website</a>.</p>
+</div>
+<footer>
+    <p>&copy; 2024 Sonam's Website. All rights reserved.</p>
+</footer>
+</body>
+</html>

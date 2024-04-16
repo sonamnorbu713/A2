@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Register</title>
+    <style>
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #00b4db, #0083b0); /* Gradient background */
+    z-index: 1000;
+    padding: 20px 0;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Main container styles */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Button styles */
+.buttons {
+    display:contents;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight:lighter;
+    transition: all 0.3s ease;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.login {
+    background: linear-gradient(135deg, #027d23, #40ec51);
+    color: #fff;
+}
+
+.login:hover {
+    background-color: #0b894e;
+    transform: translateY(-3px);
+}
+
+.register {
+    background-color: #ffc107; /* New button color */
+    color: #fff;
+}
+
+.register:hover {
+    background: linear-gradient(135deg, #dae49f, #97c500);
+    transform: translateY(-3px);
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #7ed7ec, #0683ac); /* Gradient background */
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #fff; /* Text color for the footer */
+    z-index: 1000;
+}
+
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Sonam's Website</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="index.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <h1>Welcome!</h1>
+    <p>Login or Signup?</p>
+    <div class="buttons">
+        <button class="login" onclick="window.location.href='login.html'">Login</button>
+        <button class="register" onclick="window.location.href='register.html'">Register</button>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2024 Sonam's Website. All rights reserved.</p>
+</footer>
+</body>
+</html>
